@@ -24,8 +24,10 @@ const StatusTaxonomy = () => {
 			help={isInvalid ? 'Required field' : null}
 			className={isInvalid ? 'invalid-field' : null}
 		>
+			<BaseControl.VisualLabel>Status</BaseControl.VisualLabel>
 			<RadioControl
 				label="Status"
+				hideLabelFromVision
 				onChange={handleChange}
 				options={statuses.map((status) => ({ label: status.name, value: status.id }))}
 				selected={currentStatus?.[0]}
