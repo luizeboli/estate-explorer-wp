@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "property/informations-block",
+	"version": "0.1.0",
+	"title": "Property Informations Block",
+	"description": "Fill in  your property informations",
+	"icon": "info",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"description": {
+			"type": "string",
+			"meta": "description",
+			"source": "meta"
+		},
+		"location": {
+			"type": "string",
+			"meta": "location",
+			"source": "meta"
+		},
+		"price": {
+			"type": "string",
+			"meta": "price",
+			"source": "meta"
+		}
+	},
+	"textdomain": "informations-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,23 @@
+.wp-block-property-informations-block { 
+  > .components-panel {
+    margin-top: 24px;
+  }
+
+  .invalid-field {
+    input {
+      border-color: red;
+    }
+    .components-base-control__help {
+      color: red;
+    }
+  }
+
+  .taxonomies-row {
+    display: flex;
+    gap: 40px;
+  }
+
+  .property-informations-body > div:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
