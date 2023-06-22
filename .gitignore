@@ -1,5 +1,6 @@
 uploads/
 .DS_Store
 build/
+mu-plugins/local-by-flywheel-live-link-helper.php
 
 debug.log
