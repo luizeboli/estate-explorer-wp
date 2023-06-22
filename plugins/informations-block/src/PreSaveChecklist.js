@@ -21,9 +21,8 @@ const PrevSaveChecklist = () => {
 	const { createNotice, removeNotice } = useDispatch(noticesStore);
 
 	useEffect(() => {
-		const hasEmptyFields = [title, description, location, price, status, amenities].some(
-			(field) => !field || field.length === 0,
-		);
+		const fields = [title, description, location, price, status, amenities];
+		const hasEmptyFields = fields.some((field) => !field || field.length === 0);
 
 		if (hasEmptyFields && !isLocked) {
 			lockPostSaving();
