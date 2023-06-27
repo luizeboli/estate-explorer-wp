@@ -78,6 +78,7 @@ class Property
     $this->register_amenities_taxonomy();
     $this->register_status_taxonomy();
     $this->remove_taxonomy_from_sidebar();
+    $this->add_taxonomy_slug_to_rest_query();
 
     register_post_meta(POST_TYPE_NAME, "price", [
       "show_in_rest" => true,
@@ -150,7 +151,8 @@ class Property
     register_taxonomy("property_status", [POST_TYPE_NAME], $args);
   }
 
-  function remove_taxonomy_from_sidebar() {
+  function remove_taxonomy_from_sidebar()
+  {
     add_filter(
       "rest_prepare_taxonomy",
       function ($response, $taxonomy, $request) {
@@ -167,6 +169,34 @@ class Property
       },
       10,
       3
+    );
+  }
+
+  function add_taxonomy_slug_to_rest_query()
+  {
+    add_filter(
+      "rest_" . POST_TYPE_NAME . "_query",
+      function (array $args, WP_REST_Request $request): array {
+        // Get parameters of the query
+        $params = $request->get_params();
+
+        // Enable this feature for all of the custom taxonomies
+        $custom_taxonomies = ["amenities", "property_status"];
+
+        foreach ($custom_taxonomies as $custom_taxonomy) {
+          if (isset($params["{$custom_taxonomy}_slug"])) {
+            $args["tax_query"][] = [
+              "taxonomy" => $custom_taxonomy,
+              "field" => "slug",
+              "terms" => explode(",", $params["{$custom_taxonomy}_slug"]),
+            ];
+          }
+        }
+
+        return $args;
+      },
+      10,
+      2
     );
   }
 }
