@@ -39,3 +39,9 @@ I also added some meta fields to the post type so we can better describe and org
 I believe the idea of using WordPress as a headless CMS along with Gutenberg is to allow users to dynamically build their pages and then render those same blocks on the frontend. I didn't get around to implementing this functionality as I wanted to get the project done.
 
 Therefore, the block I created with Gutenberg was only meant to facilitate the filling of property information, such as metadata and taxonomies. Even so, I was able to learn a bit about the WordPress/Gutenberg APIs, such as hooks, stores, posts, taxonomies, etc.
+
+### Theme
+
+I used the [intentionally blank](https://wordpress.org/themes/intentionally-blank/) theme with a [child theme](./themes/child-blank/functions.php) to disable some of the default post links/menus on the interface.
+
+Later on, I realized that using this theme is unnecessary (in terms of a blank page) since I'm using the [Headless Mode](https://wordpress.org/plugins/headless-mode/) plugin, which automatically redirects requests to our frontend URL.
