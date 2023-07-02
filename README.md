@@ -19,6 +19,8 @@ I used [Local](https://localwp.com/) for the development, so I'll assume that yo
 2. Setup your site using the configs listed above
 3. Clone or [download](https://github.com/luizeboli/wordpress-study/archive/refs/heads/main.zip) this repository
 4. Move everything to the `wp-content` folder of your site
+5. Navigate to the `plugins/informations-block` folder and run `npm start`.
+6. Start your site and add some property taxonomies (this will be required as taxonomies are required when adding properties)
 
 ## What we have?
 
