@@ -73,7 +73,6 @@ class Property
     ];
 
     register_post_type(POST_TYPE_NAME, $args);
-    register_block_type(WP_PLUGIN_DIR . "/informations-block/build");
 
     $this->register_amenities_taxonomy();
     $this->register_status_taxonomy();

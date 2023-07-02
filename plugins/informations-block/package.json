@@ -1,5 +1,5 @@
 {
-	"name": "property-blocks",
+	"name": "informations-block",
 	"version": "0.1.0",
 	"main": "build/index.js",
 	"scripts": {
@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@10up/eslint-config": "^3.1.0",
 		"@wordpress/eslint-plugin": "^13.10.3",
-		"@wordpress/scripts": "^26.6.0",
+		"@wordpress/scripts": "^26.7.0",
 		"eslint": "^8.43.0",
 		"prettier": "^2.8.8"
 	},
