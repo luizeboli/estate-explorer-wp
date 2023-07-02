@@ -1,6 +1,6 @@
 # Estate Explorer
 
-This is the `wp-content` folder of the [Estate Explorer](https://github.com/luizeboli/estate-explorer) frontend. 
+This is the `wp-content` folder of the [Estate Explorer](https://github.com/luizeboli/nextjs-wordpress-study) frontend. 
 
 This repository showcases some of my studies on the WordPress ecosystem, aiming to demonstrate that I have at least a basic knowledge about some of the key functionalities of the tool. These include custom post types, taxonomies, custom fields, and a bit of Gutenberg.
 
