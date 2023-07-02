@@ -112,7 +112,7 @@ class Property
     ];
 
     $args = [
-      "hierarchical" => true,
+      "hierarchical" => false,
       "labels" => $labels,
       "show_ui" => true,
       "show_admin_column" => true,
