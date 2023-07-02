@@ -29,7 +29,7 @@ const StatusTaxonomy = () => {
 				label="Status"
 				hideLabelFromVision
 				onChange={handleChange}
-				options={statuses.map((status) => ({ label: status.name, value: status.id }))}
+				options={statuses?.map((status) => ({ label: status.name, value: status.id }))}
 				selected={currentStatus?.[0]}
 			/>
 		</BaseControl>
