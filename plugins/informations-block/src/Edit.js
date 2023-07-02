@@ -32,13 +32,13 @@ const Edit = ({ attributes, setAttributes }) => {
 					/>
 
 					<TextControl
-						className={!price ? 'invalid-field' : ''}
+						className={!location ? 'invalid-field' : ''}
 						placeholder="Type the Property location"
 						label="Location"
 						value={location ?? ''}
 						onChange={updateMetaValue('location')}
 						type="text"
-						help={!price ? 'Required field' : null}
+						help={!location ? 'Required field' : null}
 					/>
 
 					<div className="taxonomies-row">
