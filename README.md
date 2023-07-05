@@ -2,9 +2,9 @@
 
 This is the `wp-content` folder of the [Estate Explorer](https://github.com/luizeboli/nextjs-wordpress-study) frontend. 
 
-This repository showcases some of my studies on the WordPress ecosystem, aiming to demonstrate that I have at least a basic knowledge about some of the key functionalities of the tool. These include custom post types, taxonomies, custom fields, and a bit of Gutenberg.
+This repository is a proof of concept for building an application using Wordpress as a Headless CMS. Using some of the key functionalities of the tool. These include custom post types, taxonomies, custom fields, and a bit of Gutenberg.
 
-It was my first experience with WordPress and PHP, so there might be some anti-patterns and implementations that are not done in the correct way. The intention was not to do things perfectly, but rather to get things done, as it allows me to showcase my ability to learn dynamically and on-demand.
+It was my first experience with WordPress and PHP, so there might be some anti-patterns and implementations that are not done in the correct way. The intention was not to do things perfectly, but rather to get things done.
 
 ## Get Started
 
@@ -20,7 +20,8 @@ I used [Local](https://localwp.com/) for the development, so I'll assume that yo
 3. Clone or [download](https://github.com/luizeboli/wordpress-study/archive/refs/heads/main.zip) this repository
 4. Move everything to the `wp-content` folder of your site
 5. Navigate to the `plugins/informations-block` folder and run `npm start`.
-6. Start your site and add some property taxonomies (this will be required as taxonomies are required when adding properties)
+6. Start your site
+7. Add some property taxonomies (this will be required as taxonomies are required when adding properties)
 
 ## What we have?
 
