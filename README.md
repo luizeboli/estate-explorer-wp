@@ -1,6 +1,6 @@
 # Estate Explorer
 
-This is the `wp-content` folder of the [Estate Explorer](https://github.com/luizeboli/nextjs-wordpress-study) frontend. 
+This is the `wp-content` folder of the [Estate Explorer](https://github.com/luizeboli/estate-explorer-web) frontend. 
 
 This repository is a proof of concept for building an application using Wordpress as a Headless CMS. Using some of the key functionalities of the tool. These include custom post types, taxonomies, custom fields, and a bit of Gutenberg.
 
